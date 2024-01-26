@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+}
+.container{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    'cabecalho cabecalho cabecalho'
+    'conteudo conteudo conteudo'
+    'footer footer footer';
+    grid-template-columns: 10%;
+}
+#cabecalho{
+    grid-area: cabecalho;
+}
+#menu_lateral{
+    grid-area: menu_lateral;
+}
+#conteudo{
+    grid-area: conteudo;
+}
+#footer{
+    grid-area: footer;
+}
+.btn_nav{
+    width: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.btn_nav:hover{
+    background-color: rgba(255, 0, 0, 0.568);
+}
+
+#cabecalho{
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+#cab{
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+#cabecalho > nav > a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+    opacity: 0.9;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#cabecalho nav a:hover{
+    color: white;
+    opacity: 1;
+}
+#conteudo{
+    margin-top: 120px;
+
+}
+.conteudo1{
+    background-color: black;
+    color: white;
+}
+.txt{
+    width: 335px;
+    font-size: 18px;
+}
+.card{
+    width: 335px;
+    margin-left: 10px;
+    background-color: rgb(68, 68, 68);
+}
+.img{
+    width: 260px;
+    margin: auto;
+}
+section{
+    padding: 110px 0 0;
+}

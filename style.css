@@ -7,7 +7,7 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
-.container{
+/*.container{
     background-color: rgba(0, 0, 0, 0.521);
     display: grid;
     grid-template-areas: 
@@ -27,13 +27,16 @@ body{
 }
 #footer{
     grid-area: footer;
-}
+}*/
 #filmes h1{
     font-family: 'Star Jedi Outline';
     color: rgb(255, 255, 255);
     font-style: oblique;
     text-align: center;
     font-size: 35px;
+    background-image: linear-gradient(to right, black, rgb(12, 12, 12), rgb(26, 25, 25), rgb(53, 53, 53));
+    border-radius: 10px 10px 0 0;
+    
     
 }
 .btn_nav{
@@ -48,16 +51,14 @@ body{
 
 #cabecalho{
     align-items: center;
+    width: 100%;
     background-color: black;
     /*background-image: linear-gradient(to right , black, rgb(5, 27, 68), rgb(9, 45, 114), rgb(11, 61, 155), rgb(5, 79, 218));*/
     color: white;
     display: flex;
     padding: 10px;
-    border-bottom: 2px solid white;
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
+    /*position: absolute;*/
+    
 }
 
 #cab{
@@ -65,57 +66,49 @@ body{
     margin: auto;
     display: flex;
 }
-nav > ul li a{
+#menu_nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    margin: auto;
+    width: 98%;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+nav{
+    margin-top: 6px;
+    margin: auto;
+    width: 511px;
+    background-color: black;
+    padding: 15px;
+}
+nav > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    display: block;
-    position: relative;
+    font-size: 22px;
+    /*position: relative;*/
 }
 html{
     scroll-behavior: smooth;
 }
-ul{
-    list-style: none;
-    display: flex;
-}
-ul li{
+a{
     margin: 0 20px;
 }
-ul:hover li a{
+nav:hover a{
     opacity: 0.3;
 }
-ul li a:hover{
+nav > a:hover{
     color: white;
     opacity: 1;
     transition: 0.3s;
     transform: scale(1.2);
 }
-ul li a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.918);
-    border-radius: 5px;
-    z-index: -1;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: 0.3s;
-}
-ul li a:hover::before{
-    transform-origin: left;
-    transform: scaleX(1);
-    transition: transform 0.2s;
-}
-#conteudo{
-    margin-top: 120px;
 
-}
+
 .conteudo1{
     background-color: rgba(0, 0, 0, 0.39);
     color: white;
@@ -146,7 +139,7 @@ ul li a:hover::before{
     margin: auto;
 }
 section{
-    padding: 110px 0 0;
+    padding: 60px 0 0;
 }
 section h1{
     color: white;
@@ -163,11 +156,14 @@ section h1{
     color: white;
     display: flex;
     margin: auto;
-    width: 1092px;
     margin-top: 10px;
 }
 @media (max-width: 1120px){
     .conteudo1{
+        width: 100%;
+        display: block;
+    }
+    #conteudo2_filmes{
         width: 100%;
         display: block;
     }
@@ -178,6 +174,35 @@ section h1{
     #conteudo{
         width: 100%;
     }
-    
+}
+@media (max-width: 1114px){
+    .card{
+        width: 785px;
+        margin: auto;
+    }
+}
+@media (max-width: 955px){
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (min-width: 414px) and (max-width: 714px){
+    .card{
+        display: block;
+        
+    }
+    #filmes{
+        width: 100%;
+        margin: auto;
+    }
+    #series{
+        width: 100%;
+        margin: auto;
+    }
+    #cabecalho{
+        display: block;
+        width: 100%;
+    }
 }
 

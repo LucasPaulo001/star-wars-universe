@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(imagens/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(imagens/wallpaperbetter.com_1366x768.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
 /*.container{
     background-color: rgba(0, 0, 0, 0.521);
     display: grid;
@@ -36,9 +37,8 @@ body{
     font-size: 35px;
     background-image: linear-gradient(to right, black, rgb(12, 12, 12), rgb(26, 25, 25), rgb(53, 53, 53));
     border-radius: 10px 10px 0 0;
-    
-    
 }
+
 .btn_nav{
     width: 100%;
     cursor: pointer;
@@ -56,7 +56,6 @@ body{
     /*background-image: linear-gradient(to right , black, rgb(5, 27, 68), rgb(9, 45, 114), rgb(11, 61, 155), rgb(5, 79, 218));*/
     color: white;
     display: flex;
-    padding: 10px;
     /*position: absolute;*/
     
 }
@@ -72,7 +71,7 @@ body{
     left: 0;
     background-color: black;
     margin: auto;
-    width: 98%;
+    width: 100%;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
     border-right: 2px solid white;
@@ -108,20 +107,22 @@ nav > a:hover{
     transform: scale(1.2);
 }
 
-
+.title{
+    width: 395px;
+}
 .conteudo1{
     background-color: rgba(0, 0, 0, 0.39);
     color: white;
     display: flex;
     margin: auto;
-    width: 1092px;
+    width: 100%;
 }
 #conteudo2_filmes{
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
     display: flex;
     margin: auto;
-    width: 1092px;
+    width: 100%;
     margin-top: 10px;
 }
 .txt{
@@ -149,7 +150,17 @@ section h1{
     color: rgb(255, 255, 255);
     font-style: oblique;
     text-align: center;
-    font-size: 35px; 
+    font-size: 35px;
+    background-image: linear-gradient(to right, black, rgb(12, 12, 12), rgb(26, 25, 25), rgb(53, 53, 53));
+    border-radius: 10px 10px 0 0; 
+}
+#conteudo{
+    background-image: url(imagens/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
 }
 .conteudo1_series{
     background-color: rgba(0, 0, 0, 0.527);
@@ -157,6 +168,49 @@ section h1{
     display: flex;
     margin: auto;
     margin-top: 10px;
+    width: 1092px;
+}
+section.ondas{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.onda{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(imagens/onda\ \(1\).png);
+    background-size: 1000px 100px;
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(15px)
+    }
+}
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+#onda1{
+    z-index: 1000;
+    opacity: 0.6;
+    background-position-x: 300px;
+}
+#onda1{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 200px;
+}
+#onda1{
+    z-index: 998;
+    opacity: 0.8;
+    background-position-x: 100px;
 }
 @media (max-width: 1120px){
     .conteudo1{
@@ -187,7 +241,7 @@ section h1{
         margin: 0;
     }
 }
-@media (min-width: 414px) and (max-width: 714px){
+@media (min-width: 300px) and (max-width: 714px){
     .card{
         display: block;
         
@@ -203,6 +257,15 @@ section h1{
     #cabecalho{
         display: block;
         width: 100%;
+        padding: 0;
+    }
+    nav > a{
+        font-size: 16px;
+    }
+    nav{
+        width: 330px;
+        margin-top: 6px;
+        background-color: black;
     }
 }
 

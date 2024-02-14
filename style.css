@@ -182,7 +182,7 @@ section.ondas{
     bottom: 0; /*A sua margem de baixo será zero*/
     background-size: 1000px 100px; 
     animation: ondaAnimada 5s ease-in-out infinite alternate; /*Parâmetro de animação em css*/
-    background-image: url(imagens/efeitos_pag/onda\ \(1\).png);
+    background-image: url(imagens/efeitos_pag/onda_com_stars.png);
     
 }
 @keyframes ondaAnimada {
@@ -230,17 +230,12 @@ section.ondas{
         width: 100%;
     }
 }
-@media (max-width: 1114px){
-    .card{
-        width: 785px;
-        margin: auto;
-    }
-}
-@media (max-width: 955px){
+@media (max-width: 1120px){
     .card{
         width: 100%;
-        margin: 0;
+        margin: auto;
     }
+
 }
 @media (min-width: 300px) and (max-width: 714px){
     .card{
